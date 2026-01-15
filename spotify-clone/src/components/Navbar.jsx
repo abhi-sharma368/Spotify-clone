@@ -1,6 +1,6 @@
 import React from "react";
 import { assets } from "../assets/frontend-assets/assets";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -26,7 +26,13 @@ const Navbar = () => {
             Explore Premium
           </p>
           <p className="bg-black py-1 px-3 rounded-2xl text-[15px] cursor-pointer">Install App</p>
-          <Link to="https://spotify-clone-admin-f9r6.onrender.com" target="_blank" className="bg-purple-500 text-black px-3 h-7 rounded-full flex items-center justify-center">Admin</Link>
+          <Link
+            to="https://spotify-clone-admin-f9r6.onrender.com"
+            target="_blank"
+            className="bg-purple-500 text-black px-3 h-7 rounded-full flex items-center justify-center"
+          >
+            Admin
+          </Link>
         </div>
       </div>
       <div className="flex items-center gap-2 mt-4">
